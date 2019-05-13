@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.68" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.68"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,7 +18,7 @@
                 <menuItem title="NewApplication" id="56">
                     <menu key="submenu" title="NewApplication" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About Pin Configurator" id="58">
+                            <menuItem title="关于 Pin Configurator" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -60,18 +60,18 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="File" id="MeE-bi-nHU">
+                <menuItem title="文件" id="MeE-bi-nHU">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="File" id="RMa-qg-Emx">
+                    <menu key="submenu" title="文件" id="RMa-qg-Emx">
                         <items>
-                            <menuItem title="Open…" keyEquivalent="o" id="5Kp-C8-M88">
+                            <menuItem title="打开" keyEquivalent="o" id="5Kp-C8-M88">
                                 <connections>
                                     <action selector="openDocument:" target="-1" id="VX9-ba-kn6"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Open Recent" id="bME-Zc-nNH">
+                            <menuItem title="最近打开" id="bME-Zc-nNH">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="TTC-Ev-Db8">
+                                <menu key="submenu" title="最近打开" systemMenu="recentDocuments" id="TTC-Ev-Db8">
                                     <items>
                                         <menuItem title="Clear Menu" id="wVq-8z-9Sn">
                                             <connections>
@@ -82,9 +82,9 @@
                                 </menu>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="gkS-Hg-DrF"/>
-                            <menuItem title="Import" id="KDZ-8C-3Bu">
+                            <menuItem title="导入" id="KDZ-8C-3Bu">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Import" id="nXO-nB-qi5">
+                                <menu key="submenu" title="导入" id="nXO-nB-qi5">
                                     <items>
                                         <menuItem title="PinConfigs.kext" id="SqU-F8-5wj">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -107,9 +107,9 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Export" id="HnM-y6-MIy">
+                            <menuItem title="导出" id="HnM-y6-MIy">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Export" id="KX6-h1-jii">
+                                <menu key="submenu" title="导出" id="KX6-h1-jii">
                                     <items>
                                         <menuItem title="PinConfigs.kext" id="HlB-JL-76y" userLabel="PinConfigs.kext">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -139,12 +139,12 @@
                                 </menu>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="81B-od-H5V"/>
-                            <menuItem title="Page Setup…" keyEquivalent="P" id="NBX-7F-lNv">
+                            <menuItem title="页面设置" keyEquivalent="P" id="NBX-7F-lNv">
                                 <connections>
                                     <action selector="runPageLayout:" target="-1" id="1kr-jg-h82"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Print…" keyEquivalent="p" id="Bww-HN-E8U">
+                            <menuItem title="打印" keyEquivalent="p" id="Bww-HN-E8U">
                                 <connections>
                                     <action selector="print:" target="470" id="8ZZ-t0-UWH"/>
                                 </connections>
@@ -152,9 +152,9 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Edit" id="702">
+                <menuItem title="编辑" id="702">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Edit" id="703">
+                    <menu key="submenu" title="编辑" id="703">
                         <items>
                             <menuItem title="Undo" keyEquivalent="z" id="704">
                                 <connections>
@@ -202,11 +202,11 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Patch" id="XB1-j8-Eij">
+                <menuItem title="补丁" id="XB1-j8-Eij">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Patch" id="Ykf-hE-WDT">
+                    <menu key="submenu" title="补丁" id="Ykf-hE-WDT">
                         <items>
-                            <menuItem title="Remove Disabled" id="12N-UW-KQz">
+                            <menuItem title="移除已关闭的" id="12N-UW-KQz">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="removeDisabledAction:" target="470" id="SmO-Ez-RZK"/>
@@ -221,9 +221,9 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Options" id="z0A-HO-LBJ" userLabel="Options">
+                <menuItem title="选项" id="z0A-HO-LBJ" userLabel="Options">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Options" id="ZIi-s2-yte" userLabel="Options">
+                    <menu key="submenu" title="选项" id="ZIi-s2-yte" userLabel="Options">
                         <items>
                             <menuItem title="Verb Sanitize" id="W0I-Fd-hqa" userLabel="Verb Sanitize">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -238,8 +238,8 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Window" id="19">
-                    <menu key="submenu" title="Window" systemMenu="window" id="24">
+                <menuItem title="窗口" id="19">
+                    <menu key="submenu" title="窗口" systemMenu="window" id="24">
                         <items>
                             <menuItem title="Minimize" keyEquivalent="m" id="23">
                                 <connections>
@@ -331,9 +331,9 @@
                             <button verticalHuggingPriority="750" imageHugsTitle="YES" id="552">
                                 <rect key="frame" x="810" y="99" width="102" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="roundRect" title="Get ConfigData" bezelStyle="roundedRect" alignment="center" controlSize="small" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="554">
+                                <buttonCell key="cell" type="roundRect" title="获取 ConfigData" bezelStyle="roundedRect" alignment="center" controlSize="small" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="554">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="smallSystem"/>
+                                    <font key="font" size="11" name=".PingFangSC-Regular"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="compileConfigList:" target="470" id="650"/>
@@ -349,16 +349,16 @@
                                 </textFieldCell>
                             </textField>
                             <segmentedControl verticalHuggingPriority="750" id="866">
-                                <rect key="frame" x="7" y="99" width="277" height="18"/>
+                                <rect key="frame" x="28" y="99" width="240" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <segmentedCell key="cell" controlSize="small" borderStyle="border" alignment="left" segmentDistribution="fill" style="roundRect" trackingMode="momentary" id="867">
                                     <font key="font" metaFont="smallSystem"/>
                                     <segments>
-                                        <segment label="Add" width="45"/>
-                                        <segment label="Edit" width="45" enabled="NO" tag="1"/>
-                                        <segment label="Remove"/>
-                                        <segment label="Clear All"/>
-                                        <segment label="Reload"/>
+                                        <segment label="添加"/>
+                                        <segment label="编辑" enabled="NO" tag="1"/>
+                                        <segment label="删除"/>
+                                        <segment label="清除"/>
+                                        <segment label="重新加载"/>
                                     </segments>
                                 </segmentedCell>
                                 <connections>
@@ -396,7 +396,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" headerView="612" autoresizesOutlineColumn="YES" outlineTableColumn="565" id="562">
-                                    <rect key="frame" x="0.0" y="0.0" width="901" height="314"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="907" height="314"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="2" height="3"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -418,8 +418,8 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="2" width="70" minWidth="70" maxWidth="70" id="565" userLabel="NID">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="NID">
-                                                <font key="font" metaFont="smallSystem"/>
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="节点">
+                                                <font key="font" metaFont="systemMedium" size="11"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
@@ -432,7 +432,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="3" width="80" minWidth="80" maxWidth="1000" id="700">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="PinDefault">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="引脚定义">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -445,7 +445,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="4" width="40" minWidth="40" maxWidth="40" id="568">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="入/出">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -458,7 +458,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="5" width="100" minWidth="100" maxWidth="1000" id="574">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Device">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="设备">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -472,7 +472,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="6" width="120" minWidth="120" maxWidth="1000" id="590">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Connector">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="连接器">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -486,7 +486,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="7" width="90" minWidth="90" maxWidth="1000" id="570">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Port">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="端口">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -500,7 +500,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="8" width="100" minWidth="100" maxWidth="1000" id="572">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Gross Location">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="设备位置">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -514,7 +514,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="9" width="120" minWidth="120" maxWidth="1000" id="jW5-cR-Tuf">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Geometric Location">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="几何位置">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -527,8 +527,8 @@
                                             <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="location"/>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="10" width="60" minWidth="60" maxWidth="1000" id="592">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Color">
+                                        <tableColumn identifier="10" width="66" minWidth="60" maxWidth="1000" id="592">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="插孔颜色">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -599,7 +599,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" id="612">
-                            <rect key="frame" x="0.0" y="0.0" width="901" height="25"/>
+                            <rect key="frame" x="0.0" y="0.0" width="907" height="25"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
@@ -652,16 +652,16 @@
                     <button verticalHuggingPriority="750" imageHugsTitle="YES" id="525">
                         <rect key="frame" x="314" y="5" width="95" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="528">
+                        <buttonCell key="cell" type="push" title="添加" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="528">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                     </button>
                     <textField verticalHuggingPriority="750" id="518">
                         <rect key="frame" x="21" y="163" width="38" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Data:" id="538">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="数据" id="538">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -669,8 +669,8 @@
                     <textField verticalHuggingPriority="750" id="520">
                         <rect key="frame" x="14" y="193" width="45" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Name:" id="531">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="型号" id="531">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -695,8 +695,8 @@
                     <textField verticalHuggingPriority="750" id="522">
                         <rect key="frame" x="17" y="228" width="226" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Add new pin configuration:" id="530">
-                            <font key="font" metaFont="systemBold"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="加入新的 pin configuration:" id="530">
+                            <font key="font" size="13" name=".PingFangSC-Medium"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -714,9 +714,9 @@
                     <button verticalHuggingPriority="750" imageHugsTitle="YES" id="524">
                         <rect key="frame" x="219" y="5" width="95" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="529">
+                        <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="529">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
@@ -741,9 +741,9 @@ Gw
                     <button verticalHuggingPriority="750" imageHugsTitle="YES" id="741">
                         <rect key="frame" x="191" y="5" width="95" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="754">
+                        <buttonCell key="cell" type="push" title="添加" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="754">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="editNodeOK:" target="470" id="849"/>
@@ -752,8 +752,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="747">
                         <rect key="frame" x="43" y="362" width="59" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Node ID:" id="750">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="节点 ID:" id="750">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -770,8 +770,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="765">
                         <rect key="frame" x="18" y="249" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Port:" id="766">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="端口" id="766">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -808,8 +808,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="745">
                         <rect key="frame" x="17" y="399" width="226" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Add New Node:" id="751">
-                            <font key="font" metaFont="systemBold"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="添加新节点" id="751">
+                            <font key="font" size="13" name=".PingFangSC-Medium"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -833,10 +833,10 @@ Gw
                         </connections>
                     </popUpButton>
                     <textField verticalHuggingPriority="750" id="AKR-72-13K">
-                        <rect key="frame" x="3" y="222" width="99" height="17"/>
+                        <rect key="frame" x="44" y="222" width="58" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Gross Location:" id="ZNk-PW-qtb">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="总的位置" id="ZNk-PW-qtb">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -862,9 +862,9 @@ Gw
                     <button verticalHuggingPriority="750" imageHugsTitle="YES" id="740">
                         <rect key="frame" x="96" y="5" width="95" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="755">
+                        <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="755">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
@@ -876,8 +876,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="781">
                         <rect key="frame" x="18" y="303" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Device:" id="788">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="设备" id="788">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -903,8 +903,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="789">
                         <rect key="frame" x="18" y="276" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Connector:" id="796">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="连接器" id="796">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -928,10 +928,10 @@ Gw
                         </connections>
                     </popUpButton>
                     <textField verticalHuggingPriority="750" id="773">
-                        <rect key="frame" x="13" y="195" width="88" height="17"/>
+                        <rect key="frame" x="43" y="195" width="58" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Geo Location:" id="780">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="具体位置" id="780">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -957,8 +957,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="797">
                         <rect key="frame" x="17" y="168" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Color:" id="804">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="插孔颜色" id="804">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -984,8 +984,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="805">
                         <rect key="frame" x="17" y="141" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Misc:" id="812">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="杂项" id="812">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -1011,8 +1011,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="813">
                         <rect key="frame" x="17" y="114" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Group:" id="820">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="组" id="820">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -1038,8 +1038,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="821">
                         <rect key="frame" x="17" y="87" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Position:" id="828">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="位置" id="828">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -1113,7 +1113,7 @@ Gw
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="7xx-35-XZR">
                             <rect key="frame" x="1" y="0.0" width="730" height="319"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" headerView="sas-ma-LgW" autoresizesOutlineColumn="YES" outlineTableColumn="Ce3-Bl-Ckf" id="7r8-lU-9uT">
                                     <rect key="frame" x="0.0" y="0.0" width="760" height="294"/>
@@ -1176,7 +1176,7 @@ Gw
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="4" width="400" minWidth="400" maxWidth="400" id="qBK-tB-nvD" userLabel="Description">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Description">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="描述">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1212,9 +1212,9 @@ Gw
                     <button verticalHuggingPriority="750" imageHugsTitle="YES" id="QhM-8X-IEo">
                         <rect key="frame" x="636" y="6" width="95" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6vi-w3-2aH">
+                        <buttonCell key="cell" type="push" title="选择" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6vi-w3-2aH">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="importPinSelect:" target="470" id="q1j-om-ggU"/>
@@ -1223,8 +1223,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="FgU-ee-8d4">
                         <rect key="frame" x="18" y="372" width="226" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select Pin Config:" id="f17-Yq-MpX">
-                            <font key="font" metaFont="systemBold"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="选择 Pin Config:" id="f17-Yq-MpX">
+                            <font key="font" size="13" name=".PingFangSC-Medium"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -1261,7 +1261,7 @@ Gw
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="rej-Bo-Jkr">
                             <rect key="frame" x="1" y="0.0" width="730" height="131"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" headerView="3k6-tE-oGO" autoresizesOutlineColumn="YES" outlineTableColumn="wln-87-gv0" id="YJN-q7-O5l">
                                     <rect key="frame" x="0.0" y="0.0" width="736" height="106"/>
@@ -1399,9 +1399,9 @@ Gw
                     <button verticalHuggingPriority="750" imageHugsTitle="YES" id="xUp-7J-Ovh">
                         <rect key="frame" x="636" y="6" width="95" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kOf-Eo-GSJ">
+                        <buttonCell key="cell" type="push" title="选择" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kOf-Eo-GSJ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="importIORegSelect:" target="470" id="1ww-C4-pZz"/>
@@ -1410,8 +1410,8 @@ Gw
                     <textField verticalHuggingPriority="750" id="e6N-zU-z5f">
                         <rect key="frame" x="18" y="184" width="226" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select Audio Device:" id="wn5-Vc-gUy">
-                            <font key="font" metaFont="systemBold"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="选择声卡设备:" id="wn5-Vc-gUy">
+                            <font key="font" size="13" name=".PingFangSC-Medium"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>

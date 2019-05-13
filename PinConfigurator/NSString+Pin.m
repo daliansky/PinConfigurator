@@ -3,21 +3,21 @@
 //  PinConfigurator
 //
 //  Created by Ben Baker on 2/7/19.
-//  Copyright © 2019 Ben Baker. All rights reserved.
+//  Copyright © 2019 Ben Baker. All rights 保留.
 //
 
 #import "NSString+Pin.h"
 
 @implementation NSString (Pin)
 
-const char *gPinColorArray[] = { "Unknown", "Black", "Gray", "Blue", "Green", "Red", "Orange", "Yellow", "Purple", "Pink", "Reserved1", "Unknown", "Unknown", "Reserved2", "White", "Other" };
-const char *gPinMisc[] = { "Jack Detect Override", "Reserved", "Reserved", "Reserved" };
-const char *gPinDefaultDeviceArray[] = { "Line Out", "Speaker", "HP Out", "CD", "SPDIF Out", "Digital Other Out", "Modem Line Side", "Modem Handset Side", "Line In", "AUX", "Mic In", "Telephony", "SPDIF In", "Digital Other In", "Reserved", "Other" };
-const char *gPinConnector[] = { "Unknown", "1/8\" Stereo/Mono", "1/4\" Stereo/Mono", "ATAPI Internal", "RCA", "Optical", "Other Digital", "Other Analog", "Multichannel Analog", "XLR/Professional", "RJ-11 (Modem)", "Combination", "Unknown", "Unknown", "Unknown", "Other" };
-const char *gPinPort[] = { "Jack", "No Connection", "Fixed", "Jack + Internal" };
-const char *gPinGeometricLocation[] = { "N/A", "Rear", "Front", "Left", "Right", "Top", "Bottom", "Special", "Special", "Special", "Reserved", "Reserved", "Reserved", "Reserved", "Reserved", "Reserved" };
-const char *gPinGrossLocation[] = { "External", "Internal", "Separate", "Other" };
-const char *gPinGrossSpecial7[] = { "Rear Panel", "Riser", "Special", "Mobile Lid-Inside" };
+const char *gPinColorArray[] = { "未知", "黑", "灰", "蓝", "绿", "红", "橙", "黄", "紫", "粉", "保留1", "未知", "未知", "保留2", "白", "其它" };
+const char *gPinMisc[] = { "插孔检测覆盖", "保留", "保留", "保留" };
+const char *gPinDefaultDeviceArray[] = { "线路输出", "外放", "耳机", "CD", "光纤输出", "其它数码输出", "调制解调器线路侧", "调制解调器手机侧", "线路输入", "AUX", "内置麦克风", "电话", "光纤输入", "其它数码输入", "保留", "其它" };
+const char *gPinConnector[] = { "未知", "1/8\" Stereo/Mono", "1/4\" Stereo/Mono", "ATAPI Internal", "RCA", "Optical", "其它 Digital", "其它 Analog", "Multichannel Analog", "XLR/Professional", "RJ-11 (Modem)", "Combination", "未知", "未知", "未知", "其它" };
+const char *gPinPort[] = { "插孔", "无连接", "固定的", "插孔+内置" };
+const char *gPinGeometricLocation[] = { "N/A", "后", "前", "左", "右", "顶", "底", "特殊", "特殊", "特殊", "保留", "保留", "保留", "保留", "保留", "保留" };
+const char *gPinGrossLocation[] = { "外部", "内置", "分离", "其它" };
+const char *gPinGrossSpecial7[] = { "后面板", "提升", "特别", "移动盒子里面" };
 const char *gPinGrossSpecial8[] = { "Drive Bay", "Digital Display", "Special", "Mobile Lid-Outside" };
 const char *gPinGrossSpecial9[] = { "Special", "ATAPI", "Special", "Special" };
 const char *gPinEAPD[] = { "BTL", "EAPD", "L/R Swap" };
