@@ -129,7 +129,7 @@
                                                 <action selector="exportVerbsTxt:" target="470" id="dJO-55-8GZ"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Platforms.xml" hidden="YES" id="UfK-Pq-bQg" userLabel="Platforms.xml">
+                                        <menuItem title="Platforms.xml" id="UfK-Pq-bQg" userLabel="Platforms.xml">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="exportPlatformsXml:" target="470" id="tJb-FS-j4E"/>
@@ -391,7 +391,7 @@
                     <scrollView horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="559">
                         <rect key="frame" x="0.0" y="120" width="918" height="340"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" id="qrW-1P-VSs">
+                        <clipView key="contentView" drawsBackground="NO" id="qrW-1P-VSs">
                             <rect key="frame" x="1" y="0.0" width="901" height="339"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -419,7 +419,7 @@
                                         </tableColumn>
                                         <tableColumn identifier="2" width="70" minWidth="70" maxWidth="70" id="565" userLabel="NID">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="节点">
-                                                <font key="font" metaFont="systemMedium" size="11"/>
+                                                <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
@@ -500,8 +500,8 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="8" width="100" minWidth="100" maxWidth="1000" id="572">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="设备位置">
-                                                <font key="font" metaFont="smallSystem"/>
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="总的位置">
+                                                <font key="font" metaFont="systemMedium" size="11"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
@@ -514,8 +514,8 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="9" width="120" minWidth="120" maxWidth="1000" id="jW5-cR-Tuf">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="几何位置">
-                                                <font key="font" metaFont="smallSystem"/>
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="具体位置">
+                                                <font key="font" metaFont="systemMedium" size="11"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
@@ -589,6 +589,7 @@
                                     </connections>
                                 </outlineView>
                             </subviews>
+                            <nil key="backgroundColor"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="561">
                             <rect key="frame" x="-100" y="-100" width="563" height="15"/>
@@ -1111,7 +1112,7 @@ Gw
                     <scrollView horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="9Uo-Go-QAj">
                         <rect key="frame" x="-1" y="44" width="747" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" id="7xx-35-XZR">
+                        <clipView key="contentView" drawsBackground="NO" id="7xx-35-XZR">
                             <rect key="frame" x="1" y="0.0" width="730" height="319"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -1195,6 +1196,7 @@ Gw
                                     </connections>
                                 </outlineView>
                             </subviews>
+                            <nil key="backgroundColor"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="qkF-ej-Sym">
                             <rect key="frame" x="-100" y="-100" width="563" height="15"/>
@@ -1259,7 +1261,7 @@ Gw
                     <scrollView horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="58Y-DU-Vh4">
                         <rect key="frame" x="-1" y="44" width="747" height="132"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" id="rej-Bo-Jkr">
+                        <clipView key="contentView" drawsBackground="NO" id="rej-Bo-Jkr">
                             <rect key="frame" x="1" y="0.0" width="730" height="131"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -1382,6 +1384,7 @@ Gw
                                     </connections>
                                 </outlineView>
                             </subviews>
+                            <nil key="backgroundColor"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="hYg-Gv-pL4">
                             <rect key="frame" x="-100" y="-100" width="563" height="15"/>

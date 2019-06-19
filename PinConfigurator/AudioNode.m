@@ -253,9 +253,9 @@
 	NSString *pinDirection = @"--";
 	
 	if ([self isOut])
-		pinDirection = @"Out";
+		pinDirection = @"输出";
 	else if ([self isIn])
-		pinDirection = @"In";
+		pinDirection = @"输入";
 	
 	return pinDirection;
 }

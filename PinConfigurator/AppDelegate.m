@@ -136,13 +136,13 @@
 	
 	[_optionsMenu insertItem:[NSMenuItem separatorItem] atIndex:0];
 	
-	NSMenuItem *sortNodesMenuItem = [[NSMenuItem alloc] initWithTitle:@"Sort Nodes" action:@selector(generalOptionClicked:) keyEquivalent:@""];
+	NSMenuItem *sortNodesMenuItem = [[NSMenuItem alloc] initWithTitle:@"节点排序" action:@selector(generalOptionClicked:) keyEquivalent:@""];
 	[sortNodesMenuItem setTag:0];
 	[sortNodesMenuItem setState:_sortNodes];
 	[_optionsMenu insertItem:sortNodesMenuItem atIndex:0];
 	[sortNodesMenuItem release];
 	
-	NSArray *nodeOptionsArray = @[@"Fix Headphone", @"Remove Disabled", @"Remove ATAPI", @"Index to Zero", @"Misc to Zero", @"Make Group Unique", @"Change Location", @"Line Out to Speaker", @"Enable DSP", @"Disable Ext Mic", @"Remove HDMI"];
+	NSArray *nodeOptionsArray = @[@"修复耳机", @"移除关闭的节点", @"移除ATAPI", @"索引设为0", @"杂项设为0", @"组应该是唯一的", @"改变位置", @"线路输出设置为耳机自动检测扬声器", @"启用DSP降噪", @"关闭外部麦克/改为线路输入", @"移除HDMI"];
 	
 	for (int i = 0; i < [nodeOptionsArray count]; i++)
 	{
@@ -404,8 +404,8 @@
 	NSPanel *addNodePanel = _addNodePanel;
 	NSButtonCell *addOkButtonCell = [_addOKButton cell];
 	[addNodePanel setDefaultButtonCell:addOkButtonCell];
-	[_addNodeTextField setStringValue:@"Add New Node"];
-	[_addOKButton setTitle:@"Add"];
+	[_addNodeTextField setStringValue:@"添加新节点"];
+	[_addOKButton setTitle:@"添加"];
 	[_addOKButton setAction:@selector(addNodeOK:)];
 	[_nodeIDTextField setStringValue:@""];
 	[_nodeIDTextField setEditable:1];
@@ -494,13 +494,13 @@
 {
 	switch([[self editNodeSegmentedControl] selectedSegment])
 	{
-		case 0: // Add
+		case 0: // Add 添加
 			[self addNode:sender];
 			break;
-		case 1: // Edit
+		case 1: // Edit 编辑
 			[self editNode:sender];
 			break;
-		case 2: // Remove
+		case 2: // Remove 移除
 		{
 			NSInteger selectedRow = [_pinConfigOutlineView selectedRow];
 			
@@ -511,12 +511,12 @@
 			[self updateView];
 			break;
 		}
-		case 3: // Clear All
+		case 3: // Clear All 清空
 			[_nodeArray removeAllObjects];
 			
 			[self update];
 			break;
-		case 4: // Reload
+		case 4: // Reload 重载
 			_nodeArray = [[NSMutableArray alloc] initWithArray:_originalNodeArray copyItems:YES];
 			
 			[self update];
@@ -719,8 +719,8 @@
 		return;
 
 	[_addNodePanel setDefaultButtonCell:[_addOKButton cell]];
-	[_addNodeTextField setStringValue:[NSString stringWithFormat:@"Edit Node %@", audioNode.nodeString]];
-	[_addOKButton setTitle:@"Save"];
+	[_addNodeTextField setStringValue:[NSString stringWithFormat:@"编辑节点 %@", audioNode.nodeString]];
+	[_addOKButton setTitle:@"保存"];
 	[_addOKButton setAction:@selector(editNodeOK:)];
 	[_nodeIDTextField setIntValue:[audioNode nid]];
 	[_nodeIDTextField setEditable:0];
@@ -861,7 +861,7 @@
 
 - (bool)getAudioVendorName:(uint32_t)codecID vendorName:(NSString **)vendorName
 {
-	*vendorName = @"Unknown";
+	*vendorName = @"未知";
 	
 	for (NSString *key in [_vendorsDictionary allKeys])
 	{
@@ -1124,7 +1124,7 @@
 	
 	NSSavePanel *savePanel = [NSSavePanel savePanel];
 	[savePanel setDelegate:self];
-	[savePanel setMessage:@"Please select the existing PinConfigs.kext to overwrite."];
+	[savePanel setMessage:@"请选择已存在的 PinConfigs.kext 并且覆写它."];
 	[savePanel setNameFieldStringValue:@"PinConfigs.kext"];
 	[savePanel setAllowedFileTypes:fileTypes];
 	
@@ -1149,10 +1149,10 @@
 	if (configEntryIndex != -1)
 	{
 		NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-		[alert setMessageText:@"Overwrite Existing Entry?"];
-		[alert setInformativeText:@"An entry for your Codec was found in PinConfigs.kext"];
-		[alert addButtonWithTitle:@"Cancel"];
-		[alert addButtonWithTitle:@"Overwrite"];
+		[alert setMessageText:@"覆盖现有条目?"];
+		[alert setInformativeText:@"您的 Codec 的条目被发现在 PinConfigs.kext"];
+		[alert addButtonWithTitle:@"取消"];
+		[alert addButtonWithTitle:@"覆盖"];
 		[alert setAlertStyle:NSWarningAlertStyle];
 		
 		[alert beginSheetModalForWindow:[self mainWindow] completionHandler:^(NSModalResponse returnCode)
@@ -1388,7 +1388,7 @@
 				[audioNode setConnector:kHdaConfigDefaultConnDigitalOther];
 			} */
 			
-			if ([audioNode.name isEqualToString:@"Headphone Mic Boost Volume"])
+			if ([audioNode.name isEqualToString:@"耳机麦克风增益音量"])
 			{
 				[audioNode setPort:kHdaConfigDefaultPortConnJack];
 				[audioNode setDevice:kHdaConfigDefaultDeviceLineIn];
